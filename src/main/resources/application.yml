@@ -1,0 +1,32 @@
+#普通的key-value
+
+#可以注入到我们的配置中
+person:
+  name: 806516984@qq.com
+  age: 25
+  happy: false
+  birth: 1995/09/19
+  maps:
+    - v1
+    - v2
+    - v3
+  lists:
+    - 1
+    - 2
+    - 3
+  course:
+    name: "旺财"
+    age: 3
+
+#yaml多环境配置
+
+server:
+  port: 8081
+spring:
+  profiles:
+    active: dev
+---
+server:
+  port: 8082
+spring:
+  profiles: test
